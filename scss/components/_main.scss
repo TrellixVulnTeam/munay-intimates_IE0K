@@ -1,0 +1,119 @@
+@import "./contenedor";
+@import "../base/list";
+
+main {
+  grid-area: main;
+  height: 82vh;
+  .carrousel {
+    img {
+      width: 100%;
+    }
+    h1 {
+      position: absolute;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      font-size: 10vw;
+      font-weight: 700;
+      color: nth($colores, 4);
+    }
+    h2 {
+      position: absolute;
+      margin-top: 9vh;
+      margin-left: 5vw;
+      font-size: 10vw;
+      font-weight: 700;
+      color: nth($colores, 4);
+    }
+    h3 {
+      position: absolute;
+      margin-top: 15vh;
+      margin-left: 5vw;
+      font-weight: 200;
+      font-size: 7vw;
+      color: nth($colores, 4);
+    }
+    button {
+      position: absolute;
+      margin-top: 80vw;
+      margin-left: 5vw;
+      font-size: 6vw;
+      background-color: transparent;
+      border: 1.5px solid nth($colores, 4);
+      border-radius: 30px;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-weight: 300;
+      color: nth($colores, 4);
+    }
+  }
+  .section-category {
+    margin-top: 5vw;
+    width: 100vw;
+    .title-category {
+      display: flex;
+      align-items: center;
+      margin-left: 5vw;
+      h1 {
+        font-size: 6vw;
+        font-weight: 400;
+        color: nth($colores, 4);
+      }
+      h3 {
+        font-size: 6vw;
+        font-weight: 300;
+        margin-left: 5px;
+        color: nth($colores, 5);
+        opacity: .5;
+      }
+    }
+    .card-category {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100vw;
+      justify-content: center;
+      .card-bombis {
+        width: 42.5vw;
+        height: 42.5vw;
+        h1 {
+          position: absolute;
+          margin-top: 6vw;
+          font-weight: 200;
+          font-size: 5vw;
+          color: nth($colores, 4);
+        }
+        img {
+          width: 100%;
+          margin-top: 5vw;
+        }
+      }
+      .card-conjunto {
+        width: 42.5vw;
+        height: 42.5vw;
+        h1 {
+          position: absolute;
+          margin-top: 5vw;
+          font-weight: 200;
+          font-size: 5vw;
+          color: nth($colores, 4);
+        }
+        img {
+          width: 100%;
+          margin-top: 5vw;
+        }
+      }
+      .card-pijamas {
+        width: 85vw;
+        h1 {
+          position: absolute;
+          margin-top: 5vw;
+          font-weight: 200;
+          font-size: 5vw;
+          color: nth($colores, 4);
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

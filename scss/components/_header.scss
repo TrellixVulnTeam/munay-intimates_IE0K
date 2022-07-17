@@ -1,0 +1,27 @@
+@import "./contenedor";
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  height: 15vw;
+  align-self: center;
+}
+
+.logo {
+  width: auto;
+  height: 70%;
+  align-self: center;
+}
+
+.icon-sm {
+  width: auto;
+  height: 50%;
+  align-self: center;
+}
+
+.burger-menu {
+  width: auto;
+  height: 50%;
+  align-self: center;
+}

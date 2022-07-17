@@ -1,0 +1,22 @@
+.contenedor {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  grid-template-rows: 10vh 90vh 10vh;
+}
+
+.float-menu {
+  position: fixed;
+  width: 70vw;
+  height: 15vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-self: center;
+  justify-content: space-around;
+  margin-top: 85vh;
+  background-color: white;
+}
