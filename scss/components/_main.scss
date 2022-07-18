@@ -47,12 +47,11 @@ main {
     }
   }
   .section-category {
-    margin-top: 5vw;
-    width: 100vw;
+    margin-top: 3vw;
     .title-category {
       display: flex;
       align-items: center;
-      margin-left: 5vw;
+      justify-content: center;
       h1 {
         font-size: 6vw;
         font-weight: 400;
@@ -63,46 +62,47 @@ main {
         font-weight: 300;
         margin-left: 5px;
         color: nth($colores, 5);
-        opacity: .5;
+        opacity: 0.5;
       }
     }
     .card-category {
-      display: flex;
-      flex-wrap: wrap;
+      width: 100vw;
+      display: grid;
+      grid-template-areas:
+        ". bombis . conjunto ."
+        ". pijama pijama pijama .";
+      grid-template-columns: 5vw 40vw 5vw 40vw 5vw;
+      grid-template-rows: 40vw 40vw;
       width: 100vw;
       justify-content: center;
+      margin-top: 3vw;
       .card-bombis {
-        width: 42.5vw;
-        height: 42.5vw;
+        grid-area: bombis;
         h1 {
           position: absolute;
-          margin-top: 6vw;
           font-weight: 200;
           font-size: 5vw;
           color: nth($colores, 4);
         }
         img {
           width: 100%;
-          margin-top: 5vw;
         }
       }
       .card-conjunto {
-        width: 42.5vw;
-        height: 42.5vw;
+        grid-area: conjunto;
         h1 {
           position: absolute;
-          margin-top: 5vw;
           font-weight: 200;
           font-size: 5vw;
           color: nth($colores, 4);
         }
         img {
           width: 100%;
-          margin-top: 5vw;
         }
       }
       .card-pijamas {
-        width: 85vw;
+        grid-area: pijama;
+        margin-top: 5vw;
         h1 {
           position: absolute;
           margin-top: 5vw;

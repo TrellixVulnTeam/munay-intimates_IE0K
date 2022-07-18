@@ -2,7 +2,7 @@
   height: 100vh;
   display: grid;
   grid-template-areas: "header header" "main main" "footer footer";
-  grid-template-rows: 10vh 90vh 10vh; }
+  grid-template-rows: 8vh 94vh 8vh; }
 
 .float-menu {
   position: fixed;
@@ -20,7 +20,7 @@
   height: 100vh;
   display: grid;
   grid-template-areas: "header header" "main main" "footer footer";
-  grid-template-rows: 10vh 90vh 10vh; }
+  grid-template-rows: 8vh 94vh 8vh; }
 
 .float-menu {
   position: fixed;
@@ -60,7 +60,7 @@ header {
   height: 100vh;
   display: grid;
   grid-template-areas: "header header" "main main" "footer footer";
-  grid-template-rows: 10vh 90vh 10vh; }
+  grid-template-rows: 8vh 94vh 8vh; }
 
 .float-menu {
   position: fixed;
@@ -113,12 +113,11 @@ main {
     font-weight: 300;
     color: #323232; }
   main .section-category {
-    margin-top: 5vw;
-    width: 100vw; }
+    margin-top: 3vw; }
     main .section-category .title-category {
       display: flex;
       align-items: center;
-      margin-left: 5vw; }
+      justify-content: center; }
       main .section-category .title-category h1 {
         font-size: 6vw;
         font-weight: 400;
@@ -128,38 +127,37 @@ main {
         font-weight: 300;
         margin-left: 5px;
         color: #a4a4a4;
-        opacity: .5; }
+        opacity: 0.5; }
     main .section-category .card-category {
-      display: flex;
-      flex-wrap: wrap;
       width: 100vw;
-      justify-content: center; }
+      display: grid;
+      grid-template-areas: ". bombis . conjunto ." ". pijama pijama pijama .";
+      grid-template-columns: 5vw 40vw 5vw 40vw 5vw;
+      grid-template-rows: 40vw 40vw;
+      width: 100vw;
+      justify-content: center;
+      margin-top: 3vw; }
       main .section-category .card-category .card-bombis {
-        width: 42.5vw;
-        height: 42.5vw; }
+        grid-area: bombis; }
         main .section-category .card-category .card-bombis h1 {
           position: absolute;
-          margin-top: 6vw;
           font-weight: 200;
           font-size: 5vw;
           color: #323232; }
         main .section-category .card-category .card-bombis img {
-          width: 100%;
-          margin-top: 5vw; }
+          width: 100%; }
       main .section-category .card-category .card-conjunto {
-        width: 42.5vw;
-        height: 42.5vw; }
+        grid-area: conjunto; }
         main .section-category .card-category .card-conjunto h1 {
           position: absolute;
-          margin-top: 5vw;
           font-weight: 200;
           font-size: 5vw;
           color: #323232; }
         main .section-category .card-category .card-conjunto img {
-          width: 100%;
-          margin-top: 5vw; }
+          width: 100%; }
       main .section-category .card-category .card-pijamas {
-        width: 85vw; }
+        grid-area: pijama;
+        margin-top: 5vw; }
         main .section-category .card-category .card-pijamas h1 {
           position: absolute;
           margin-top: 5vw;
